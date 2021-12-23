@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Add Task</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="style.css" type="text/css">
+		<script src="script.js" defer></script>
+	</head>
+	<body>
+	  <form method="POST" class="task-form" enctype="multipart/form-data" action="/form" onsubmit="return validate()">
+		  <h1>Add new task</h1>
+		    <div class="form-field">
+				<label for="title">Title</label>
+				<input type="text" name="title" id="title" placeholder="Please enter the title...">
+			</div>
+			<div class="form-field">
+				<label for="note">Note</label>
+				<textarea id="note" name="note" rows="4" placeholder="Please enter the details..."></textarea>
+			</div>
+			<input type="submit" value="Add" id="form-submit">
+	  </form>
+	</body>
+</html>

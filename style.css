@@ -1,0 +1,182 @@
+:root {
+	--green: hsl(120, 70%, 50%);
+	--red: hsl(0, 70%, 50%);
+	--background: hsl(240, 20%, 20%);
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+	background-color: var(--background);
+	color: white;
+	font-family: Calibri, sans-serif;
+	text-align: center;
+}
+
+.button-container {
+	display: flex;
+	width: 30%;
+	margin: 0 auto;
+	justify-content: space-around;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+	margin: 20px;
+	padding: 20px;
+	width: 40%;
+}
+
+#add-task {
+	border: var(--green) dashed 3px;	
+}
+
+#add-task:hover {
+	background-color: var(--green);	
+}
+
+#remove-task {
+	border: var(--red) dashed 3px;	
+}
+
+#remove-task:hover {
+	background-color: var(--red);
+}
+
+.task-container {
+	width: 60%;
+	min-width: 500px;
+	margin: 0 auto;
+	padding: 3px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.task {
+	background-color: var(--background);
+	margin: 0 auto;
+	width: 100%;
+	border: solid 3px salmon;
+}
+
+.task-title {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: dashed 3px salmon;
+}
+
+.task-title h2, .task-title h3, .task-title h4 {
+	display: inline-block;
+	margin: 0;
+}
+
+.task-title h2 {
+
+    width: 2em;
+}
+
+.task-title h3 {
+	flex-basis: 70%;
+	text-align: left;
+	padding-left: 20px;	
+	font-weight: 900;
+	border-left: dashed 3px salmon;
+}
+
+.task-title h4 {
+	flex-basis: 30%;
+	border-left: dashed 3px salmon;
+}
+
+.task-details p {
+	width: 90%;
+	margin-left: 5%;
+	text-align: left;
+	padding: .5em 0;
+}
+
+.task-form {
+    width: 30%;
+    margin: 5em auto;
+    border: solid 3px salmon;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    font-size: 2em;
+    padding: .5em;
+}
+
+.task-form h1 {
+    border-bottom: dashed 3px salmon;
+    padding: .2em 0;
+}
+
+.form-field {
+    display: flex;
+    justify-content: space-around;
+}
+
+.form-field label {
+    flex-basis: 20%;
+}
+
+.form-field input {
+    flex-basis: 70%;
+}
+
+.form-field textarea {
+    flex-basis: 70%;
+}
+
+#form-submit{
+    display: block;
+    width: 30%;
+    align-self: center;
+    color: white;
+	text-decoration: none;
+	margin: 20px;
+	padding: 20px;
+	background-color: var(--background);
+	border: dashed 3px var(--green);
+	font-size: .75em;
+}
+
+#form-submit:hover {
+	background-color: var(--green);
+}
+
+#remove-submit{
+    display: block;
+    width: 30%;
+    align-self: center;
+    color: white;
+	text-decoration: none;
+	margin: 20px;
+	padding: 20px;
+	background-color: var(--background);
+	border: dashed 3px var(--red);
+	font-size: .75em;
+}
+
+#remove-submit:hover {
+	background-color: var(--red);
+}
+
+.form-field.remove {
+    font-size: .75em;
+    justify-content: center;
+}
+
+.form-field.remove label {
+    flex-basis: 40%;
+}
+
+.form-field.remove input {
+    flex-basis: 10%;
+}

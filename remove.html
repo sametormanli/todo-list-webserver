@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Remove Task</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="style.css" type="text/css">
+		<script src="script.js" defer></script>
+	</head>
+	<body onload="fetchEvent()">
+	  <form method="POST" class="task-form" enctype="multipart/form-data" action="/remove" onsubmit="return clickSubmit()">
+		  <h1>Remove Task</h1>
+		    <div class="form-field remove">
+				<label for="number">Task Number</label>
+				<input type="number" name="number" id="number">
+			</div>
+			<input type="submit" value="Remove" id="remove-submit">
+	  </form>
+	</body>
+</html>
